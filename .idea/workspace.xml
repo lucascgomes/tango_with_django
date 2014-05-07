@@ -23,40 +23,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tango_with_django/settings.py">
+      <file leaf-file-name="populate_rango.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/populate_rango.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="53" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="1691">
+            <state line="9" column="49" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1349">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rango/views.py">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rango/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="58" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="551">
+            <state line="6" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="0.32386363" vertical-offset="0" max-vertical-offset="475">
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rango/templates/rango/about.html">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rango/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="159" selection-end="159" vertical-scroll-proportion="0.57734805" vertical-offset="0" max-vertical-offset="418">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rango/templates/rango/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="437">
-              <folding />
+            <state line="7" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,20 +64,25 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/rango/urls.py" />
-        <option value="$PROJECT_DIR$/tango_with_django/urls.py" />
         <option value="$PROJECT_DIR$/tango_with_django/templates/rango/index.html" />
         <option value="$PROJECT_DIR$/tango_with_django/settings.py" />
         <option value="$PROJECT_DIR$/rango/templates/rango/index.html" />
         <option value="$PROJECT_DIR$/rango/views.py" />
         <option value="$PROJECT_DIR$/rango/templates/rango/about.html" />
+        <option value="$PROJECT_DIR$/rango/urls.py" />
+        <option value="$PROJECT_DIR$/tango_with_django/urls.py" />
+        <option value="$PROJECT_DIR$/tango_with_django/admin.py" />
+        <option value="$PROJECT_DIR$/populate_rango.py" />
+        <option value="$PROJECT_DIR$/rango/models.py" />
+        <option value="$PROJECT_DIR$/rango/admin.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="131" />
+    <option name="x" value="-17" />
+    <option name="y" value="62" />
     <option name="width" value="1382" />
-    <option name="height" value="748" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -158,28 +156,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tango_with_django" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tango_with_django" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -191,6 +167,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lucas\Documents\Django Projects\tango_with_django\rango" />
+      <recent name="C:\Users\Lucas\Documents\Django Projects\tango_with_django\tango_with_django" />
     </key>
   </component>
   <component name="RunManager">
@@ -327,11 +304,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="131" y="0" width="1382" height="748" extended-state="0" />
+    <frame x="-17" y="62" width="1382" height="710" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3493976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14572491" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -384,19 +361,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="60" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="247">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="228" />
+        <state line="6" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="228">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tango_with_django/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="361" />
+        <state line="11" column="43" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="361">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tango_with_django/settings.py">
@@ -410,46 +395,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="19" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="209">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tango_with_django/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.24050634" vertical-offset="0" max-vertical-offset="395" />
+        <state line="3" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tango_with_django/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tango_with_django/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="53" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="1691">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rango/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="58" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="551">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,6 +427,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="51" selection-start="159" selection-end="159" vertical-scroll-proportion="0.57734805" vertical-offset="0" max-vertical-offset="418">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="58" selection-start="967" selection-end="967" vertical-scroll-proportion="0.7794872" vertical-offset="95" max-vertical-offset="551">
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tango_with_django/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="12" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="1691">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="0.10795455" vertical-offset="0" max-vertical-offset="352">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tango_with_django/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="306" selection-end="306" vertical-scroll-proportion="0.59375" vertical-offset="0" max-vertical-offset="380">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_rango.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="49" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="0.32386363" vertical-offset="0" max-vertical-offset="475">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
