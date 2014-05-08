@@ -1,14 +1,16 @@
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from rango.models import Category, Page
-from rango.forms import CategoryForm, PageForm
-from rango.forms import UserForm, UserProfileForm
+from rango.forms import CategoryForm, PageForm, UserForm, UserProfileForm
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect, HttpResponse
+from datetime import datetime
+
 
 def decode_url(category_name_url):
     return category_name_url.replace('_', ' ')
+
 
 def index(request):
     context = RequestContext(request)
@@ -16,17 +18,34 @@ def index(request):
     category_list = Category.objects.order_by('-likes')[:5]
     context_dict = {'categories':category_list}
 
+    for category in category_list:
+        category.url = category.name.replace(' ', '_')
+
     pages_list = Page.objects.order_by('-views')[:5]
     context_dict['pages'] = pages_list
 
-    for category in category_list:
-        category.url = category.name.replace(' ', '_')
+    if request.session.get('last_visit'):
+        last_visit_time = request.session.get('last_visit')
+        visits = request.session.get('visits', 0)
+
+        if (datetime.now() - datetime.strptime(last_visit_time[:-7], "%Y-%m-%d %H:%M:%S")).days > 0:
+            request.session['visits'] = visits + 1
+            request.session['last_visit'] = str(datetime.now())
+    else:
+        request.session['last_visit'] = str(datetime.now())
+        request.session['visits'] = 1
+
     return render_to_response('rango/index.html', context_dict, context)
 
 
 def about(request):
     context = RequestContext(request)
-    return render_to_response('rango/about.html', context)
+    if request.session.get('visits'):
+        count = request.session.get('visits')
+    else:
+        count = 0
+    # remember to include the visit data
+    return render_to_response('rango/about.html', {'visits': count}, context)
 
 def category(request, category_name_url):
     context = RequestContext(request)
@@ -41,6 +60,7 @@ def category(request, category_name_url):
     except Category.DoesNotExist:
         pass
     return render_to_response('rango/category.html', context_dict, context)
+
 
 @login_required
 def add_category(request):
@@ -65,6 +85,7 @@ def add_category(request):
         form = CategoryForm()
 
     return render_to_response('rango/add_category.html', {'form':form}, context)
+
 
 @login_required
 def add_page(request, category_name_url):
@@ -107,6 +128,7 @@ def add_page(request, category_name_url):
              'category_name': category_name, 'form': form},
              context)
 
+
 def register(request):
     context = RequestContext(request)
     registered = False
@@ -142,6 +164,7 @@ def register(request):
                              'registered':registered},
                             context)
 
+
 def user_login(request):
     context = RequestContext(request)
 
@@ -166,7 +189,9 @@ def user_login(request):
 
 @login_required
 def restricted(request):
-    return HttpResponse("Since you're logged in, you can see this text!")
+    context = RequestContext(request)
+    return render_to_response('rango/restricted.html', {}, context)
+
 
 @login_required
 def user_logout(request):
