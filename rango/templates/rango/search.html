@@ -1,16 +1,8 @@
-{% extends "rango/base.html" %}
-
-{% load static %}
-
-{% block title %}Search{% endblock %}
-
-{% block body_block %}
    <div class="hero-unit">
-        <h1>Search with Rango</h1>
-        <br/>
+        <h4>Search for page</h4>
 
         <div class="container-fluid">
-            <form class="form-signin span8" id="user_form" method="post" action="/rango/search/">
+            <form class="form-signin span8" id="user_form" method="post" action="/rango/category/{{ category_name }}/">
                 {% csrf_token %}
                 <!-- Display the search form elements here -->
                 <input type="text" size="50" name="query" value="" id="query" />
@@ -33,4 +25,3 @@
             {% endif %}
         </div>
     </div>
-{% endblock %}

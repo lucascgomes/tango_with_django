@@ -18,7 +18,9 @@
             <div class="row-fluid">
                 <div class="span3">
                     <div class="well sidebar-nav">
-                        <!--- Empty for the timebeing -->
+                        {% block sidebar %}
+                        {% endblock %}
+                        {% include "rango/category_list.html" %}
                     </div>
                     <!--/.well -->
                 </div>
@@ -49,6 +51,7 @@
                        <ul class="nav pull-right">
                            {% if user.is_authenticated %}
                             <li class="navbar-text">Welcome, {{ user.username }}!</li>
+                            <li><a href="/rango/profile">Profile</a></li>
                             <li><a href="/rango/logout/">Logout</a></li>
                            {% else %}
                             <li><a href="/rango/register/">Register</a></li>
@@ -63,7 +66,6 @@
                            <li><a href="/rango/about/">About</a></li>
                        </ul>
                    </div>
-                   <a href="/rango/search/"> Search </a>
                    <!--/.nav-collapse -->
                </div>
            </div>
