@@ -5,8 +5,17 @@
 {% block body_block %}
     <div class="hero-unit">
         <h1>{{ category_name }}</h1>
+        <p>
+            <b id="like_count">{{ category.likes }}</b> people like this category
+            {% if user.is_authenticated %}
+                    <button id ="likes" data-catid="{{category.id}}" class="btn btn-mini btn-primary" type="button">Like</button>
+            {% endif %}
+        </p>
+
+        <div id="pages">
         {% if category %}
             {% if pages %}
+
             <br/>
             <ul>
                 {% for page in pages %}
@@ -15,6 +24,7 @@
             </ul>
             {% else %}
                 <strong> No pages currently in category. </strong>
+
             {% endif %}
             <br />
             {% if user.is_authenticated %}
@@ -23,6 +33,7 @@
         {% else %}
             The specified category {{ category_name }} does not exist!
         {% endif %}
+        </div>
     </div>
     <!-- Including search html in the bottom of the category page -->
     {% include "rango/search.html" %}
