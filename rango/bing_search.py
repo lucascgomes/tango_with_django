@@ -43,3 +43,13 @@ def run_query(search_terms):
         print "Error when querying the Bing API: ", e
 
     return results
+
+if __name__ == '__main__':
+    search = str(raw_input("What's up?"))
+    print "Searching " + search +"..."
+    results = run_query(search)
+    for result in results:
+        try:
+            print result['title'] + "\n" + result['summary'] + "\n" + result['link'] + "\n\n"
+        except:
+            pass
