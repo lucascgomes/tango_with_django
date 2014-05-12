@@ -20,3 +20,16 @@ $('#suggestion').keyup(function(){
          $('#cats').html(data);
         });
 });
+
+$('#add_all_content').click(function(){
+        var catid;
+        var s_url;
+        var s_title;
+        catid = $(this).attr("data-catid");
+        s_url = $(this).attr("data-url");
+        s_title = $(this).attr("data-title");
+         $.get('/rango/auto_add_page/', {category_id: catid, url: s_url, title: s_title}, function(data){
+                   $('#add_site').html(data);
+                   $('#add').hide();
+               });
+});
