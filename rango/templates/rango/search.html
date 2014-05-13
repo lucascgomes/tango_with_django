@@ -2,7 +2,7 @@
         <h4>Search for page</h4>
 
         <div class="container-fluid">
-            <form class="form-signin span8" id="user_form" method="post" action="/rango/category/{{ category_name }}/">
+            <form class="form-signin span8" id="user_form" method="post" action="/rango/category/{{ category_name_url }}/">
                 {% csrf_token %}
                 <!-- Display the search form elements here -->
                 <input type="text" size="50" name="query" value="" id="query" />
