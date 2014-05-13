@@ -286,18 +286,16 @@ def auto_add_page(request):
     url = None
     title = None
     context_dict = {}
-    print "I'm auto adding pages"
     if request.method == 'GET':
         cat_id = request.GET['category_id']
         url = request.GET['url']
         title = request.GET['title']
         if cat_id:
-            print "I'm inside!"
             category = Category.objects.get(id=int(cat_id))
             p = Page.objects.get_or_create(category=category, title=title, url=url)
 
             pages = Page.objects.filter(category=category).order_by('-views')
-
+            
             # Adds our results list to the template context under name pages.
             context_dict['pages'] = pages
 
