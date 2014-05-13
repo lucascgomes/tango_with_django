@@ -65,7 +65,7 @@ def about(request):
     else:
         count = 0
     # remember to include the visit data
-    context_dict = {'visits': count}
+    context_dict = {'visit_count': count}
     #NEW
     context_dict['cat_list'] = get_category_list()
     return render_to_response('rango/about.html', context_dict , context)
@@ -298,6 +298,7 @@ def auto_add_page(request):
             
             # Adds our results list to the template context under name pages.
             context_dict['pages'] = pages
+            context_dict['category_name_url'] = encode_url(str(category.name))
 
     #return render_to_response('rango/category.html', context_dict, context)
     return render_to_response('rango/page_list.html', context_dict, context)
